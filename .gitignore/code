@@ -1,0 +1,58 @@
+#include <iostream>
+#include <math.h>
+#define cteG 6.67408*pow(10,-11)
+#define eps 8.8544*pow(10,-12)
+using namespace std;
+
+int main(){
+    char tipo;
+    double K,M,Q,q,mu,x,y,vx,vy;
+    cout << "Introduce el tipo de fuerza (K,G,C): ";
+    cin >> tipo;
+    switch (tipo){
+        case 'K':
+        case 'k':
+                {cout << "Introduce el valor de la cte K: ";
+                cin >> K;
+                break;}
+
+        case 'G':
+        case 'g':
+            {cout << "Introduce el valor de la masa central: ";
+            cin >> M;
+            break;}
+
+        case 'C':
+        case 'c':
+            {cout << "Introduce el valor de la carga central: ";
+            cin >> Q;
+            cout << "Introduce el valor de la carga de la particula: ";
+            cin >> q;
+            break;
+            }
+        default:
+            cout << "Error. Caracter no valido.";
+            break;}
+    if (tipo == 'K' || tipo == 'k' || tipo == 'G' || tipo == 'g' || tipo == 'C' || tipo == 'c'){
+        cout << "Masa de la particula: ";
+        cin >> mu;
+        cout << "Posicion inicial (componente x): ";
+        cin >> x;
+        cout << "Posicion inicial (componente y): ";
+        cin >> y;
+        cout << "Velocidad inicial (componente x): ";
+        cin >> vx;
+        cout << "Velocidad inicial (componente y): ";
+        cin >> vy;}
+   
+
+
+
+
+
+
+
+
+
+
+}
